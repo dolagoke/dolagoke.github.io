@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+<title>Fixed Nav and Footer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 80px;
+      background-color: white;
+      border-bottom: 1px solid black;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background-color: black;
+    }
+
+    .content-container {
+      margin-top: 80px;
+      height: 800px;
+      background-color: grey;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      margin: 20px;
+    }
+
+    footer {
+      width: 100%;
+      height: 80px;
+      background-color: white;
+      border-top: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer h1 {
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo"></div>
+  </nav>
+
+  <div class="content-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <footer>
+    <h1><strong>Copyright 2024</strong></h1>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
